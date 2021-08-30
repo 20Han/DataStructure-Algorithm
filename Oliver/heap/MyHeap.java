@@ -86,6 +86,17 @@ class Heap<T>{
         return lastIndex;
     }
 
+    public boolean isEmpty(){
+        return lastIndex == 0;
+    }
+
+    public T peek(){
+        if(lastIndex == 0)
+            return null;
+        else
+            return arr[1];
+    }
+
     private void swap(int i, int j){
         T temp = arr[i];
         arr[i] = arr[j];
